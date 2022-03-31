@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.deviantart.com%2Fkuroravenart%2Fart%2FMugiwara-no-Kaizokudan-Sombrero-de-Paja-Luffy-755339409&psig=AOvVaw0dRkpDz-fXC5Pq-NjaMphQ&ust=1648787049447000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCMiGpsbA7_YCFQAAAAAdAAAAABAD" alt="">
+    <link rel="shortcut icon" type="imagex/png" href="icon.ico">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form>
+        <div id="Inicio">
+            <h1 id="titulo">Cadastro de DEVs</h1>
+            <p id="subtitulo">Cadastre Suas Informações Aqui</p>
+        </div>
+        
+        <fieldset class="grupo">
+        <div class="campo">
+            <label for="nome">Nome</label>
+            <input type="text" name="nome" id="nome">
+        </div>
+
+        <div class="campo">
+            <label for="sobrenome">Sobrenome</label>
+            <input type="text" id="sobrenome">
+        </div>
+        </fieldset>
+        
+        <div class="campo">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email">
+        </div>
+
+        <div class="campo">
+            <label>De qual lado da aplicação você desenvolve?</label>
+            <label>
+                <input type="radio" name="devweb" id="devweb" value="frontend" checked>Front-End
+            </label>
+            <label>
+                <input type="radio" name="devweb" id="devback" value="backend">Back-End
+            </label>
+            <label>
+                <input type="radio" name="devweb" id="fullstack" value="fullstack">Full-Stack
+            </label>
+        </div>
+
+        <div class="campo">
+            <label for="senioridade">Senioridade</label>
+            <select id="senioridade">
+                <option selected disabled value="">Escolha alguma opção:</option>
+                <option value="Junior">Junior</option>
+                <option value="Mid">Pleno</option>
+                <option value="Sênior">Sênior</option>
+            </select>
+        </div>
+
+        <div>
+            <fieldset class="grupo">
+                <div id="check" >
+                    <label style="color: #59429d;">Selecione As Tecnologias Que Utiliza:</label><br><br>
+                    <input type="checkbox" name="tecnologia1" id="tecnologia1" value="HTML">
+                    <label>HTML</label>
+                    <input type="checkbox" name="tecnologia2" id="tecnologia2" value="CSS">
+                    <label for="">CSS</label>
+                    <input type="checkbox" name="tecnologia3" id="tecnologia3" value="JavaScript">
+                    <label for="">JavaScript</label>
+                    <input type="checkbox" name="tecnologia4" id="tecnologia4" value="PHP">
+                    <label for="">PHP</label>
+                    <input type="checkbox" name="tecnologia5" id="tecnologia5" value="Python">
+                    <label for="">Python</label>
+                    <input type="checkbox" name="tecnologia6" id="tecnologia6" value="C#">
+                    <label for="">C#</label>
+                    <input type="checkbox" name="tecnologia7" id="tecnologia7" value="C++">
+                    <label for="">C++</label>
+
+                </div>
+            </fieldset>
+        </div>
+
+        <div class="campo">
+            <br>
+            <label for="">Conte-nos um pouco mais sobre sua experiência! </label>
+            <textarea name="experiencia" id="experiencia" style="width: 26em;" rows="6"></textarea>
+        </div>
+        
+        <button class="button" type="submit" value="Confirmar">Confirmar</button>
+    </form>
+</body>
+</html>
